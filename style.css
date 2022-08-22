@@ -98,11 +98,10 @@ button {
 .box1 {
   width: 300px;
   background-color: rgba(201, 210, 218, 0.2);
-  position: absolute;
-  top: 5%;
-  right: 10%;
+  margin: 0%;
+  
 }
-.box1 div img {
+.box1>div>img {
   margin: 15px;
   width: 10%;
   padding: 7px 20px;
@@ -113,15 +112,14 @@ button {
   padding-bottom: 20px;
   margin-left: 20px;
   font-weight: 600;
+  margin-bottom: 0%;
 }
 .box2 {
   width: 300px;
-  position: relative;
-  top: 70%;
-  left: 30%;
+  
   background-color: rgba(201, 210, 218, 0.2);
 }
-.box2 div svg {
+.box2>div>svg {
   margin: 15px;
 
   padding: 4px 20px;
@@ -131,9 +129,69 @@ button {
   font-size: 4vmin;
   font-weight: 200;
 }
+.box01{
+  position: absolute;
+  top: 5%;
+  right: 10%;
+}
+.box02{
+  position: relative;
+  top: 70%;
+  left: 30%;
+  display: flex;
+  
+  
+  align-items: center;
+}
+.line{
+  width: 2px;
+  height: 70px;
+  background-color: aliceblue;
+  margin: 0%;
+  margin-left: 60%;
+  display: block;
+
+}
+.line02{
+  display: block;
+  width: 70px;
+  height: 2px;
+  background-color: aliceblue;
+  
+}
+.box02::after{
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-color: aliceblue;
+  border-radius: 50%;
+ 
+  
+}
+.box01::after{
+  content: "";
+  width: 20px;
+  height: 20px;
+  display: block;
+  margin-left: 57%;
+  background-color: aliceblue;
+  border-radius: 50%;
+  
+
+}
+.navbar>i{
+  font-size: 3vmin;
+  color: aliceblue;
+  display: none;
+}
+
 @media only screen and (max-width:1000px){
 .navlink{
   display: none;
+}
+.navbar>i{
+  display: block;
 }
 .right-sec{
   display: none;
